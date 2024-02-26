@@ -1,5 +1,6 @@
-export const isBrowser = typeof window !== 'undefined';
+
 export const isMobile = isBrowser ? window.matchMedia('(pointer: coarse)').matches : false;
+export const isBrowser = typeof window !== 'undefined';
 export const canUseDOM: boolean =
   typeof window !== 'undefined' &&
   typeof window.document !== 'undefined' &&
